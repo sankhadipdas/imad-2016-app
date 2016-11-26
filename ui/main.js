@@ -36,7 +36,7 @@ function loadLoginForm () {
                   submit.value = 'Login';
               }
               loadLogin();
-          }   
+          }  
           // Not done yet
         };
         
