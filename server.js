@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<style>
+
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
