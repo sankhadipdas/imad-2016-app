@@ -88,11 +88,11 @@ res.sendFile(path.join(__dirname, 'ui', 'lcss.css'));
 });
 
 app.get('/ui/log.png', function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'log.png'));
+res.sendFile(path.join(__dirname, 'ui', 'Now.jpg'));
 });
 
 app.get('/ui/log.png', function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'log.png'));
+res.sendFile(path.join(__dirname, 'ui', 'Now.jpg'));
 });
 
 app.get('/ui/parlia.png', function (req, res) {
