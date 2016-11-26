@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: 'sankhadipdas',
-    database: 'sankhadipdas',
+    user: 'surabhi-gupta',
+    database: 'surabhi-gupta',
     host: 'db.imad.hasura-app.io',
     port: '5432',
     password: process.env.DB_PASSWORD
@@ -107,8 +107,8 @@ app.get('/ui/it.png', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'it.png'));
 });
 
-app.get('/ui/sankha.jpg', function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'sankha.jpg'));
+app.get('/ui/surabhi.jpg', function (req, res) {
+res.sendFile(path.join(__dirname, 'ui', 'surabhi.jpg'));
 });
 
 function hash (input, salt) {
@@ -188,7 +188,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.send('<html><body style="background-color: #efebeb;color: #666;font-size: 87.5%;font-family:Arial;line-height: 1.5; text-align: center;"><a href="/">Back to home</a>You are successfully logged out!<br/><br/></body></html>');
+   res.send('<html><body style="background-color: #efebeb;color: #666;font-size: 87.5%;font-family:Arial;line-height: 1.5; text-align: center;"><a href="/">Back to home</a><br/><br/>You are successfully logged out!</body></html>');
 });
 
 var pool = new Pool(config);
@@ -273,3 +273,10 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+
+
+
+
+
+
