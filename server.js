@@ -108,7 +108,7 @@ res.sendFile(path.join(__dirname, 'ui', 'it.png'));
 });
 
 app.get('/ui/surabhi.jpg', function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'surabhi.jpg'));
+res.sendFile(path.join(__dirname, 'ui', 'sankha.jpg'));
 });
 
 function hash (input, salt) {
@@ -273,10 +273,4 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
-
-
-
-
-
-
 
